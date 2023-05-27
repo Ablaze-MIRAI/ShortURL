@@ -1,0 +1,21 @@
+{
+  "name": "ShortURL",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "dockerComposeFile": ["./docker-compose.yml"],
+  "postCreateCommand": "yarn install",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "remote.SSH.lockfilesInTmp": true
+      },
+      "extensions": [
+        "editorconfig.editorconfig",
+        "bradlc.vscode-tailwindcss",
+        "csstools.postcss",
+        "svelte.svelte-vscode",
+        "prisma.prisma"
+      ]
+    }
+  }
+}
