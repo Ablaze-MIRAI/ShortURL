@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    ports:
+      - 5000:3000
+    environment:
+      - PUBLISH_DOMAIN=example.net

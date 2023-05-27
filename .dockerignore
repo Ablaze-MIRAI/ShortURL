@@ -1,0 +1,10 @@
+data
+.svelte-kit
+.devcontainer
+node_modules
+.editorconfig
+.gitignore
+docker-compose.yml
+Dockerfile
+README.md
+yarn-error.log
