@@ -8,4 +8,4 @@ RUN yarn build
 
 RUN yarn mg:dep
 
-CMD [ "yarn", "start" ]
+CMD [ "node", "build/index.js" ]

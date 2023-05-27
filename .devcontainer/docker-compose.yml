@@ -6,14 +6,3 @@ services:
     tty: true
     volumes:
       - "../:/workspace"
-    environment:
-      - DATABASE_URL=postgresql://postgres:postgres@db:5432/postgres?schema=public
-
-  db:
-    image: postgres:15-alpine
-    volumes:
-      - ./pgdata:/var/lib/postgresql/data
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_DB: postgres
-      POSTGRES_PASSWORD: postgres

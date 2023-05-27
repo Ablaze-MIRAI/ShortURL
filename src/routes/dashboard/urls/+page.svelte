@@ -56,6 +56,7 @@
       </div>
     </div>
   </div>
+  {#if data.urls}
   <div class="mt-10 mb-20 grid md:grid-cols-2">
     {#each data.urls as url}
     <div class="p-2 mb-5">
@@ -73,4 +74,7 @@
     </div>
     {/each}
   </div>
+  {:else}
+  <p>URLがありません</p>
+  {/if}
 </div>

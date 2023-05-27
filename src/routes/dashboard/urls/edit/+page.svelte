@@ -60,7 +60,7 @@
       <div class="form-control w-full mt-5 md:max-w-md">
         <label for="url_slug" class="label">URL</label>
         <div class="input-group">
-          <span>data.domain/</span>
+          <span>{data.domain}/</span>
           <input id="url_slug" type="text" name="slug" placeholder="youtube" value={slug} class="input input-bordered w-full" />
         </div>
       </div>

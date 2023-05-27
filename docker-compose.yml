@@ -3,7 +3,8 @@ version: "3.9"
 services:
   app:
     build: .
+    tty: true
     ports:
-      - 5000:3000
+      - 7000:3000
     environment:
       - PUBLISH_DOMAIN=example.net

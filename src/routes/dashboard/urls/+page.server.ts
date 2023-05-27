@@ -9,7 +9,9 @@ export const load: PageServerLoad = (async ({ params }) => {
     }
   });
 
-  return { urls: urls, domain: process.env.PUBLISH_DOMAIN?process.env.PUBLISH_DOMAIN:"example.com" };
+  const urls_info = urls?urls:[];
+
+  return { urls: urls_info, domain: process.env.PUBLISH_DOMAIN?process.env.PUBLISH_DOMAIN:"example.com" };
 });
 
 export const actions: Actions = {
